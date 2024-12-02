@@ -36,6 +36,37 @@
       });
     </script>
 
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .horizontal-scroll-wrapper {
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+
+      .horizontal-scroll-content {
+        display: inline-flex;
+      }
+
+      .scroll-item {
+        min-width: 280px;
+        height: 180px;
+        background-color: #007bff;
+        color: white;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        text-align: center;
+        flex-shrink: 0;
+      }
+    </style>
+
     <!-- CSS Files -->
     <link
       rel="stylesheet"
@@ -174,29 +205,7 @@
           <nav
             class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom"
             data-background-color="dark"
-          >
-            <!-- <div class="container-fluid">
-              <nav
-                class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex"
-              >
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <button
-                      type="submit"
-                      class="btn btn-search pe-1"
-                    >
-                      <i class="fa fa-search search-icon"></i>
-                    </button>
-                  </div>
-                  <input
-                    type="text"
-                    placeholder="Search ..."
-                    class="form-control"
-                  />
-                </div>
-              </nav>
-            </div> -->
-          </nav>
+          ></nav>
           <!-- End Navbar -->
         </div>
 
@@ -245,9 +254,7 @@
                               <i class="fa fa-dollar-sign"></i>
                             </span> -->
                             <div>
-                              <h3>
-                                Name : Yulsen
-                              </h3>
+                              <h3>Name : Yulsen</h3>
                             </div>
                           </div>
                         </div>
@@ -259,9 +266,7 @@
                               <i class="fa fa-shopping-cart"></i>
                             </span> -->
                             <div>
-                              <h3>
-                                Hobby : Coding
-                              </h3>
+                              <h3>Hobby : Coding</h3>
                             </div>
                           </div>
                         </div>
@@ -273,9 +278,7 @@
                               <i class="fa fa-shopping-cart"></i>
                             </span> -->
                             <div>
-                              <h3>
-                                Angkatan : Web Developer
-                              </h3>
+                              <h3>Angkatan : Web Developer</h3>
                             </div>
                           </div>
                         </div>
@@ -287,9 +290,7 @@
                               <i class="fa fa-shopping-cart"></i>
                             </span> -->
                             <div>
-                              <h3>
-                                Point : 100
-                              </h3>
+                              <h3>Point : 100</h3>
                             </div>
                           </div>
                         </div>
@@ -297,6 +298,17 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <div class="horizontal-scroll-wrapper">
+              <div class="horizontal-scroll-content">
+                <div class="scroll-item">Item 1</div>
+                <div class="scroll-item">Item 2</div>
+                <div class="scroll-item">Item 3</div>
+                <div class="scroll-item">Item 4</div>
+                <div class="scroll-item">Item 5</div>
+                <div class="scroll-item">Item 6</div>
               </div>
             </div>
           </div>
